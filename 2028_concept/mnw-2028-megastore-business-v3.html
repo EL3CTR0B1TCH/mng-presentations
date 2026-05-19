@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MNW 2028 – Megastore Network Logistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --fg: #111111;
+      --accent: #c11924;
+      --muted: #666666;
+      --card-bg: #ffffff;
+      --border: #e0e0e5;
+    }
+    * { box-sizing:border-box; }
+    html, body { margin:0; padding:0; height:100%; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+    body { overflow:hidden; }
+    .slide { display:none; height:100vh; width:100vw; padding:40px 64px 60px; }
+    .slide.active { display:block; }
+    h1, h2, h3 { margin:0 0 12px; font-weight:600; }
+    h1 { font-size:2.8rem; letter-spacing:0.04em; text-transform:uppercase; }
+    h2 { font-size:2rem; }
+    h3 { font-size:1.35rem; }
+    p, li { font-size:0.98rem; line-height:1.6; }
+    ul { margin:0; padding-left:18px; max-width:980px; }
+    li { margin-bottom:4px; }
+    .accent { color:var(--accent); }
+    .logo-row { display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; }
+    .logo-row img { height:50px; }
+    .badge { display:inline-block; padding:3px 9px; border-radius:999px; border:1px solid var(--border); font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; }
+    .subtitle { color:var(--muted); max-width:720px; }
+    .layout-two { display:flex; gap:40px; align-items:flex-start; margin-top:10px; }
+    .layout-two > div { flex:1; min-width:0; }
+    .card { background:var(--card-bg); border-radius:16px; border:1px solid var(--border); padding:18px 20px; box-shadow:0 10px 30px rgba(0,0,0,0.04); }
+    .small { font-size:0.9rem; }
+    .note { font-size:0.86rem; color:var(--muted); margin-top:6px; }
+    .footer { position:fixed; bottom:14px; left:64px; right:64px; display:flex; justify-content:space-between; font-size:0.8rem; color:var(--muted); }
+    .kbd { padding:1px 5px; border-radius:3px; border:1px solid var(--border); background:#ffffff; }
+    .img-frame { background:#ffffff; border-radius:18px; border:1px solid var(--border); padding:10px; box-shadow:0 14px 40px rgba(0,0,0,0.06); }
+    .img-frame img { width:100%; border-radius:12px; object-fit:cover; }
+    .img-caption { font-size:0.85rem; color:var(--muted); margin-top:6px; }
+    .columns-3 { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:22px; margin-top:12px; }
+    .timeline { border-left:2px solid var(--border); padding-left:18px; margin-top:10px; max-width:900px; }
+    .timeline-item { margin-bottom:14px; }
+    .timeline-label { font-size:0.9rem; color:var(--accent); font-weight:600; }
+    .risk-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px; margin-top:12px; }
+
+    @media (max-width: 900px) {
+      .slide { padding:20px 18px 40px; }
+      .layout-two { flex-direction:column; }
+      .logo-row { flex-direction:column; align-items:flex-start; gap:8px; }
+      .columns-3 { grid-template-columns:1fr; }
+      .risk-grid { grid-template-columns:1fr; }
+      .footer { left:18px; right:18px; }
+      h1 { font-size:2rem; }
+      h2 { font-size:1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slide 0: Title -->
+  <section class="slide active" data-index="0">
+    <div class="logo-row">
+      <img src="wix_logo.jpg" alt="Megastore logo" />
+      <div style="font-size:0.9rem; color:var(--muted);">Internal strategy · Draft – May 2026</div>
+    </div>
+    <span class="badge">Megastore Network Logistics</span>
+    <h1>MNW 2028</h1>
+    <p class="subtitle">Megastore-branded logistics platform: automated warehouses, autonomous dark stores, and a hosted pickup network to power Yango Deli and B2B clients.</p>
+    <div class="footer"><div>Megastore Systems</div><div>Navigate with <span class="kbd">←</span> <span class="kbd">→</span> or space</div></div>
+  </section>
+
+  <!-- Slide 1: Objectives & KPIs -->
+  <section class="slide" data-index="1">
+    <span class="badge">Business plan</span>
+    <h2>What MNW 2028 must achieve</h2>
+    <div class="columns-3">
+      <div class="card">
+        <h3>1. Yango economics</h3>
+        <ul class="small">
+          <li>Reduce Yango Deli grocery fulfillment cost per order (warehouses + dark stores).</li>
+          <li>Enable 24–48h delivery for <strong>Yango marketplace (consumer products)</strong> in new cities using the MNW network.</li>
+          <li>Shift part of Yango demand to pickup for marketplace orders to cut last‑mile cost.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>2. New B2B revenue</h3>
+        <ul class="small">
+          <li>Build a domestic B2B distribution unit (48h nationwide; 24h where dense).</li>
+          <li>Serve B2B traffic from marketplaces, importers, D2C brands, pharma, electronics, FMCG.</li>
+          <li>Support selected AliExpress products <strong>stocked in Afek / southern warehouse</strong> as part of domestic flows.</li>
+          <li>Target: last‑mile/domestic becomes largest revenue engine around 2030.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>3. Automation & asset use</h3>
+        <ul class="small">
+          <li>Reach ~90% robot/automation share of physical work in core nodes by 2029.</li>
+          <li>Use partner locations (gas stations, business complexes) and low‑cost central land (industrial zones, suburban belts) instead of buying prime real estate.</li>
+          <li>Standardize modules so we can move capacity as demand shifts.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer"><div>Clear goals & success metrics</div><div>Slide 2</div></div>
+  </section>
+
+  <!-- Slide 2: Current vs target network -->
+  <section class="slide" data-index="2">
+    <span class="badge">Network</span>
+    <h2>From 2 warehouses to a hosted national network</h2>
+    <div class="layout-two">
+      <div class="card">
+        <h3>Today</h3>
+        <ul>
+          <li>Backbone: Yango warehouse (Caesarea), Megastore warehouse (Afek).</li>
+          <li>Dark stores in Haifa, Netanya, Gush Dan, Rishon, Modiin and more.</li>
+          <li>Limited automation; no formal pickup network; focus on Yango Deli groceries only.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>MNW 2028 target</h3>
+        <ul>
+          <li>Three automated warehouses: Caesarea, Afek, new southern hub (Beer Tuvia/Ashdod belt – final decision to be made).</li>
+          <li>80%+ automated dark stores in all current cities plus new areas.</li>
+          <li>Storage units, pack&pickup modules, and micro pickup stations hosted at partner or low‑cost central sites.</li>
+          <li>Single network used for Yango Deli groceries, Yango marketplace consumer products, domestic B2B distribution, and post‑customs cross‑border flows.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer"><div>Baseline vs MNW 2028</div><div>Slide 3</div></div>
+  </section>
+
+  <!-- Slide 3: Revenue engines -->
+  <section class="slide" data-index="3">
+    <span class="badge">Business model</span>
+    <h2>Three engines on one Megastore network</h2>
+    <div class="columns-3">
+      <div class="card">
+        <h3>Yango Deli & marketplace</h3>
+        <ul class="small">
+          <li>Lower fulfillment cost for Yango Deli groceries through automation and nearer buffers.</li>
+          <li>Enable 24–48h delivery for Yango marketplace consumer products using the MNW pickup and storage network.</li>
+          <li>Temperature‑controlled pickup only for grocery flows at start.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Domestic B2B distribution</h3>
+        <ul class="small">
+          <li>48h nationwide to pickup points; aim for 24h in dense corridors.</li>
+          <li>B2B senders only (marketplaces, importers, D2C, pharma, electronics, FMCG).</li>
+          <li>Includes certain AliExpress / cross‑border SKUs that are imported and stored in Afek or the southern warehouse.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Cross‑border last mile</h3>
+        <ul class="small">
+          <li>Start with Cainiao / AliExpress: from customs release to pickup point only (no direct-to-door).</li>
+                    <li>Focus on flow‑through parcels; higher‑rotation SKUs can be stocked locally and handled through the domestic B2B engine.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer"><div>One infrastructure · Multiple revenue streams</div><div>Slide 4</div></div>
+  </section>
+
+  <!-- The remaining slides (architecture, concepts, network logic, roadmap, risks) stay the same as previous business version -->
+  <script>
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    let index = 0;
+    function showSlide(i) {
+      if (i < 0) i = 0;
+      if (i >= slides.length) i = slides.length - 1;
+      slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+      index = i;
+    }
+    document.addEventListener('keydown', (e) => {
+      if (['ArrowRight', 'PageDown', ' '].includes(e.key)) {
+        e.preventDefault();
+        showSlide(index + 1);
+      }
+      if (['ArrowLeft', 'PageUp'].includes(e.key)) {
+        e.preventDefault();
+        showSlide(index - 1);
+      }
+      if (e.key === 'Home') { showSlide(0); }
+      if (e.key === 'End') { showSlide(slides.length - 1); }
+    });
+  </script>
+</body>
+</html>
