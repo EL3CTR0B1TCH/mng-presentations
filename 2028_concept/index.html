@@ -98,7 +98,7 @@
         <h3>3. Automation & asset use</h3>
         <ul class="small">
           <li>Reach ~90% robot/automation share of physical work in core nodes by 2029.</li>
-          <li>Use partner locations (gas stations, business complexes) and low‑cost central land (industrial zones, suburban belts) instead of buying prime real estate.</li>
+          <li>Use partner locations (gas stations, business complexes) and low‑cost central land (industrial zones) instead of buying prime real estate.</li>
           <li>Standardize modules so we can move capacity as demand shifts.</li>
         </ul>
       </div>
@@ -157,14 +157,204 @@
         <h3>Cross‑border last mile</h3>
         <ul class="small">
           <li>Start with Cainiao / AliExpress: from customs release to pickup point only (no direct-to-door).</li>
-                    <li>Focus on flow‑through parcels; higher‑rotation SKUs can be stocked locally and handled through the domestic B2B engine.</li>
+          <li>Focus on flow‑through parcels; higher‑rotation SKUs can be stocked locally and handled through the domestic B2B engine.</li>
+          <li>Possible southern hub as cross‑dock for imported consumer goods.</li>
         </ul>
       </div>
     </div>
     <div class="footer"><div>One infrastructure · Multiple revenue streams</div><div>Slide 4</div></div>
   </section>
 
-  <!-- The remaining slides (architecture, concepts, network logic, roadmap, risks) stay the same as previous business version -->
+  <!-- Slide 4: Architecture overview -->
+  <section class="slide" data-index="4">
+    <span class="badge">Architecture</span>
+    <h2>Four layers of MNW</h2>
+    <div class="layout-two">
+      <div>
+        <h3 class="accent">1. Warehouses</h3>
+        <ul>
+          <li>Caesarea: primary intake for Yango Deli, upgraded conveyors and robots.</li>
+          <li>Afek: Megastore smart warehouse to support Yango + B2B parcels.</li>
+          <li>Possible new southern hub: central but cheaper land near logistics corridors (Beer Tuvia/Ashdod belt).</li>
+        </ul>
+        <h3 class="accent">2. Autonomous dark stores</h3>
+        <ul>
+          <li>Upgrade existing sites to ~80% automated picking.</li>
+          <li>Use 3‑axis conveyors, robotic arms and smart storage for fast‑movers.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="accent">3–4. Hosted edge modules</h3>
+        <ul>
+          <li><strong>Storage units</strong> – modular 20ft‑style containers with temperature options.</li>
+          <li><strong>Pack&pickup</strong> – mini 100% automated dark store boxes.</li>
+          <li><strong>Micro pickup stations</strong> – compact pickup lockers / drone pads.</li>
+        </ul>
+        <p class="note">Edge modules sit inside partner or low‑cost locations – gas stations, industrial zones, retail/business parks, and selected rooftops.</p>
+      </div>
+    </div>
+    <div class="footer"><div>Backbone + dark stores + edge</div><div>Slide 5</div></div>
+  </section>
+
+  <!-- Slide 5: Storage unit concept -->
+  <section class="slide" data-index="5">
+    <span class="badge">Concept – storage unit</span>
+    <h2>Storage units · Central but low‑cost buffers</h2>
+    <div class="layout-two">
+      <div class="img-frame">
+        <img src="mnw_storage_unit_v6.jpg" alt="MNW storage unit concept" />
+        <div class="img-caption">Storage unit example – can sit in an industrial zone or large partner site with easy truck access.</div>
+      </div>
+      <div>
+        <h3 class="accent">Role & placement</h3>
+        <ul>
+          <li>Hold totes pre‑sorted in warehouses for fast pickup and local distribution.</li>
+          <li>First choice: <strong>central but cheap land</strong> – industrial areas, outskirts of main cities, logistics parks.</li>
+          <li>Also possible: back‑of‑lot areas in big gas stations or retail parks where rent is attractive.</li>
+          <li>Designed to be relocatable so we can move capacity as demand and land prices change.</li>
+        </ul>
+        <p class="note">Think of this as a <strong>micro‑warehouse in a box</strong> that we drop wherever cost and access are optimal.</p>
+      </div>
+    </div>
+    <div class="footer"><div>Edge capacity at low‑cost sites</div><div>Slide 6</div></div>
+  </section>
+
+  <!-- Slide 6: Pack&pickup concept -->
+  <section class="slide" data-index="6">
+    <span class="badge">Concept – pack&pickup</span>
+    <h2>Pack&pickup · Miniature automated dark stores</h2>
+    <div class="layout-two">
+      <div class="img-frame">
+        <img src="mnw_pack_pickup_v6.jpg" alt="MNW pack and pickup concept" />
+        <div class="img-caption">Pack&pickup module – fits on larger gas‑station forecourts or business parks with strong daily traffic.</div>
+      </div>
+      <div>
+        <h3 class="accent">Role & placement</h3>
+        <ul>
+          <li>Handle end‑to‑end automated picking and dispensing for small/medium parcels.</li>
+          <li>Deployed where we want high service levels but do not justify a full dark store.</li>
+          <li>Restock via vans at start; designed to support drone replenishment later.</li>
+          <li>Can support nearby dark stores during peaks as a surge buffer.</li>
+        </ul>
+        <p class="note">Use pack&pickup to <strong>test new areas</strong> and create premium nodes inside partner sites.</p>
+      </div>
+    </div>
+    <div class="footer"><div>Automation in a small footprint</div><div>Slide 7</div></div>
+  </section>
+
+  <!-- Slide 7: Micro pickup station concept -->
+  <section class="slide" data-index="7">
+    <span class="badge">Concept – pickup station</span>
+    <h2>Micro pickup stations · Nano hubs everywhere</h2>
+    <div class="layout-two">
+      <div class="img-frame">
+        <img src="mnw_pickup_station_v6.jpg" alt="MNW micro pickup station concept" />
+        <div class="img-caption">Micro pickup station – default node type for broad coverage across partner locations.</div>
+      </div>
+      <div>
+        <h3 class="accent">Role & placement</h3>
+        <ul>
+          <li>Provide 24/7 pickup for small and medium parcels with minimal footprint.</li>
+          <li>Deployed across gas stations, business complexes, malls, rooftops and street corners.</li>
+          <li>Integrate with drone pads over time; fully useful from day one with van/car restock.</li>
+          <li>Primary node for cross‑border and domestic B2B parcels.</li>
+        </ul>
+        <p class="note">This is our <strong>coverage workhorse</strong> – cheap, repeatable and easy to host.</p>
+      </div>
+    </div>
+    <div class="footer"><div>Dense coverage with low capex</div><div>Slide 8</div></div>
+  </section>
+
+  <!-- Slide 8: Pickup network logic -->
+  <section class="slide" data-index="8">
+    <span class="badge">Pickup network</span>
+    <h2>Hosted network in partners & cheap central zones</h2>
+    <div class="layout-two">
+      <div>
+        <h3 class="accent">Placement logic</h3>
+        <ul>
+          <li><strong>Storage units</strong> – central but low‑cost land: industrial zones, logistics parks; only in gas stations when space and rent make sense.</li>
+          <li><strong>Pack&pickup</strong> – high‑traffic partner locations: larger gas stations, business parks, campuses.</li>
+          <li><strong>Micro pickup</strong> – everywhere we want coverage: most gas stations, malls, office buildings, rooftops, street‑corner sites.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="accent">Business impact</h3>
+        <ul>
+          <li>We minimize land and construction capex by piggy‑backing on existing sites.</li>
+          <li>Partners gain traffic and services; we gain fast, low‑cost last mile.</li>
+          <li>Same grid serves Yango, domestic B2B and cross‑border volumes.</li>
+        </ul>
+        <p class="note">Key planning question: how many nodes per corridor (center, north, south) to hit volume and SLA targets.</p>
+      </div>
+    </div>
+    <div class="footer"><div>Partner real estate as our grid</div><div>Slide 9</div></div>
+  </section>
+
+  <!-- Slide 9: Roadmap -->
+  <section class="slide" data-index="9">
+    <span class="badge">Roadmap</span>
+    <h2>2026–2030 rollout (high level)</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-label">2026–2027 · Build backbone</div>
+        <p class="small">Automate Caesarea and Afek; evaluate southern hub site; design module standards; pilot 1–2 autonomous dark stores and 3–5 micro pickup stations in Gush Dan.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-label">2027–2028 · Deploy edge</div>
+        <p class="small">Potentially open southern hub; sign first gas‑station and business‑park partners; deploy first wave of storage units in industrial sites; roll out 20–40 pickup/pack&pickup nodes.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-label">2028–2030 · Scale revenue</div>
+        <p class="small">Ramp domestic B2B distribution; onboard Cainiao/AliExpress flows to pickup network; densify nodes in center/north/south; move towards 90% automation in core nodes.</p>
+      </div>
+    </div>
+    <p class="note">2030 base‑case: last‑mile/domestic unit becomes Megastore's largest revenue contributor; 2029 is upside if execution is ahead of plan.</p>
+    <div class="footer"><div>Build · Deploy · Scale</div><div>Slide 10</div></div>
+  </section>
+
+  <!-- Slide 10: Risks & open questions -->
+  <section class="slide" data-index="10">
+    <span class="badge">Risks & issues</span>
+    <h2>Key risks and what we need to solve</h2>
+    <div class="risk-grid">
+      <div class="card">
+        <h3>Execution & capex</h3>
+        <ul class="small">
+          <li>Automation projects in warehouses/dark stores slip or overrun budget.</li>
+          <li>Too many node types or vendors → complexity and higher maintenance.</li>
+          <li>Mitigation: strict phasing, vendor selection, and standardization of modules.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Demand & partners</h3>
+        <ul class="small">
+          <li>Pickup adoption slower than planned; partners not ready to allocate space.</li>
+          <li>Cross‑border volumes (Cainiao, others) lower or delayed vs expectations.</li>
+          <li>Mitigation: focus first on strongest corridors and anchor partners; design nodes to be relocatable.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Technology & regulation</h3>
+        <ul class="small">
+          <li>Drone regulations or airspace management slower than expected.</li>
+          <li>System integration complexity between Megastore, Yango, and partners.</li>
+          <li>Mitigation: plan network to work on vans only; treat drones as upside; invest in strong integration layer.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Focus & priorities</h3>
+        <ul class="small">
+          <li>Trying to serve too many client types at once; dilution of effort.</li>
+          <li>Internal confusion between Yango growth vs external B2B focus.</li>
+          <li>Mitigation: clear phasing of segments and yearly targets; governance between business units.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">This slide is for honest internal discussion – what could break the plan and where we must be disciplined.</p>
+    <div class="footer"><div>Realistic view of challenges</div><div>Slide 11</div></div>
+  </section>
+
   <script>
     const slides = Array.from(document.querySelectorAll('.slide'));
     let index = 0;
